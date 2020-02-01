@@ -14,9 +14,9 @@ public class MovePlatform : MonoBehaviour
 
     public int pointSelection;
 
-    public bool isOn = false;
+    public bool isOn;
 
-    public bool atEnd = false; 
+    public bool atEnd;
 
     // Start is called before the first frame update
     void Start()
@@ -28,44 +28,21 @@ public class MovePlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      platform.transform.position = Vector3.MoveTowards(platform.transform.position, currentPoint.position, Time.deltaTime *moveSpeed);
+        platform.transform.position = Vector3.MoveTowards(platform.transform.position, currentPoint.position, Time.deltaTime *moveSpeed);
 
         if (platform.transform.position == currentPoint.position && isOn == true)
         {
             pointSelection++;
-           
+
             if (pointSelection == points.Length)
             {
                 pointSelection = 0;
-                atEnd = true; 
-                
+                atEnd = true;
 
             }
 
             currentPoint = points[pointSelection];
-            
 
         }
-    
-
-    
-    void OnTriggerEnter2D (Collider2D collision){
-        if(collision.gameObject.tag == "Player")
-        {
-           collision.GetComponent<Collider>().transform.SetParent(transform);
-            
-        }
-        Debug.Log("Hit");
-    }
-
-    void OnTriggerExit2D (Collider2D collision){
-        if(collision.gameObject.tag == "Player")
-        {
-           collision.GetComponent<Collider>().transform.SetParent(null);
-           
-        }  
-        Debug.Log("Unhit");
-
-    }
     }
 }
