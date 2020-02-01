@@ -14,6 +14,8 @@ public class MovePlatform : MonoBehaviour
 
     public int pointSelection;
 
+    public bool isOn = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +28,7 @@ public class MovePlatform : MonoBehaviour
     {
         platform.transform.position = Vector3.MoveTowards(platform.transform.position, currentPoint.position, Time.deltaTime *moveSpeed);
 
-        if (platform.transform.position == currentPoint.position)
+        if (platform.transform.position == currentPoint.position && isOn == true)
         {
             pointSelection++;
 

@@ -330,7 +330,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 243202138676898030, guid: 3cbcb671932e9e14292e75bf713cd27b,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: b9b19fea3be99b248aae857b6245b17c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0809ca5c5663cc940b105bb3aa036767, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -535,6 +535,7 @@ MonoBehaviour:
   dash: {fileID: 6622077378266093271}
   onRope: 0
   walljump: 0
+  alreadyPlayed: 0
   right: 0
   maxSpeed: 12
   jumpTakeOffSpeed: 20
@@ -567,6 +568,7 @@ MonoBehaviour:
   dash: {fileID: 6622077378266093271}
   onRope: 0
   walljump: 0
+  alreadyPlayed: 0
   right: 0
 --- !u!114 &1444192910
 MonoBehaviour:
