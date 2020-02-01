@@ -35,10 +35,12 @@ public class MovePlatform : MonoBehaviour
             if (pointSelection == points.Length)
             {
                 pointSelection = 0;
+                isOn = false;
 
             }
 
             currentPoint = points[pointSelection];
+            isOn = false;
 
         }
     }
