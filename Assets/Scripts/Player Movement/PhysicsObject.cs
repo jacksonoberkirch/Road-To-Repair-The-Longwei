@@ -19,6 +19,7 @@ public class PhysicsObject : MonoBehaviour
     public bool touchIce;
     public AudioSource jump;
     public AudioSource dash;
+    public AudioSource Climb;
 
     public bool onRope;
 
@@ -166,6 +167,7 @@ public class PhysicsObject : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision){
         if (collision.gameObject.tag == "rope"){
             onRope = true;
+            Climb.Play();
         }
     }
 

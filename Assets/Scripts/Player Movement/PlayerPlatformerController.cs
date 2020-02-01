@@ -37,6 +37,7 @@ public class PlayerPlatformerController : PhysicsObject
 
         if(onRope){
             grounded = true;
+
         }
 
         if (touchIce && !isSliding && Input.GetAxis("Horizontal") < 0.01f && Input.GetAxis("Horizontal") > -0.01f && !noSlideYet)
