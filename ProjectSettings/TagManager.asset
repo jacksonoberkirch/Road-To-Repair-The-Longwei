@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - movingPlatform
-  - rope
+  tags: [movingPlatform, rope, Create, movingPlatform]
   layers:
   - Default
   - TransparentFX
