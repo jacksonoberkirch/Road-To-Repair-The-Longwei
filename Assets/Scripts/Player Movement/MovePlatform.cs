@@ -16,6 +16,8 @@ public class MovePlatform : MonoBehaviour
 
     public bool isOn = false;
 
+    public bool atEnd = false; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,16 +33,17 @@ public class MovePlatform : MonoBehaviour
         if (platform.transform.position == currentPoint.position && isOn == true)
         {
             pointSelection++;
-
+           
             if (pointSelection == points.Length)
             {
                 pointSelection = 0;
-                isOn = false;
+                atEnd = true; 
+                
 
             }
 
             currentPoint = points[pointSelection];
-            isOn = false;
+            
 
         }
     }
