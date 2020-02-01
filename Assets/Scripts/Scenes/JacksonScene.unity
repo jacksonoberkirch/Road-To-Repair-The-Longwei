@@ -727,57 +727,91 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!1 &1917226666
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1917226667}
-  - component: {fileID: 1917226668}
-  m_Layer: 0
-  m_Name: 'Game Manager '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1917226667
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917226666}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2378271, y: 0.11492353, z: -1.0625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1917226668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1917226666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f86012f429d4642b53e60601a76498, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchs: {fileID: 2146072666}
-  platform: {fileID: 380891312}
 --- !u!1 &2146072666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6851076518356914771, guid: bfb662bf2634e5e4895832777a12ef08,
     type: 3}
   m_PrefabInstance: {fileID: 2266246847785512968}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1104988054486716931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2378271
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.11492353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584040, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584041, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Game Manager '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104988052645584047, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: switchs
+      value: 
+      objectReference: {fileID: 2146072666}
+    - target: {fileID: 1104988052645584047, guid: aec51fe77c71d524cbbe3d49d4a44fa0,
+        type: 3}
+      propertyPath: platform
+      value: 
+      objectReference: {fileID: 380891312}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aec51fe77c71d524cbbe3d49d4a44fa0, type: 3}
 --- !u!1001 &2266246847785512968
 PrefabInstance:
   m_ObjectHideFlags: 0
