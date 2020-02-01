@@ -41,6 +41,15 @@ Tilemap:
   m_GameObject: {fileID: 7413415860562002927}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 0, y: -2, z: 0}
+    second:
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: -2, y: -1, z: 0}
     second:
       m_TileIndex: 12
@@ -197,6 +206,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b20ad569f3d4fc44596570dabc054c99, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 48336431e7ed6f74b94737fb1245510f, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 2fdff5e42917c30488489d749d04b900, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 183882d3aa242dd43a5edb0c181d5fea, type: 3}
@@ -226,8 +237,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 0ca404dbeb0418d4c82b7fa7fba7ca3e, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 46427fbe33d0b2f498f2493dca73dee5, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 3bd082c672ecd514ea3a642ed2c8454e, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 14
+  - m_RefCount: 15
     m_Data:
       e00: 1
       e01: 0
@@ -246,12 +259,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 14
+  - m_RefCount: 15
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -2, y: -1, z: 0}
-  m_Size: {x: 4, y: 4, z: 1}
+  m_Origin: {x: -2, y: -2, z: 0}
+  m_Size: {x: 4, y: 5, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -310,7 +323,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -357,7 +370,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8748208314734138121}
   m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
+  m_CellSize: {x: 1.28, y: 1.28, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
