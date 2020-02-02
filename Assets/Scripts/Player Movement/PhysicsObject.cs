@@ -50,7 +50,7 @@ public class PhysicsObject : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire3"))
         {
-            dash.Play();
+            //dash.Play();
         }
     }
 
