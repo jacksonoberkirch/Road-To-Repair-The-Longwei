@@ -8,7 +8,7 @@ public class PhysicsObject : MonoBehaviour
     public float minGroundNormalY = .65f;
     public float gravityModifier = 1f;
     public Vector2 targetVelocity;
-    public  bool grounded;
+    public bool grounded;
     protected Vector2 groundNormal;
     protected Rigidbody2D rb2d;
     protected Vector2 velocity;
@@ -19,6 +19,7 @@ public class PhysicsObject : MonoBehaviour
     public bool touchIce;
     public AudioSource jump;
     public AudioSource dash;
+    public AudioSource Climb;
 
     public bool onRope;
 
@@ -43,11 +44,11 @@ public class PhysicsObject : MonoBehaviour
     {
         targetVelocity = Vector2.zero;
         ComputeVelocity();
-         if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetButtonDown("Jump") && grounded)
         {
             jump.Play();
         }
-        if(Input.GetButtonDown("Fire3"))
+        if (Input.GetButtonDown("Fire3"))
         {
             dash.Play();
         }
@@ -120,17 +121,17 @@ public class PhysicsObject : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
         if (collision.gameObject.tag == "wall")
         {
             Collider2D collider = collision.collider;
             walljump = true;
-           
+
 
             Vector3 contactPoint = collision.contacts[0].point;
             Vector3 center = collider.bounds.center;
 
-             right = contactPoint.x > center.x;
+            right = contactPoint.x > center.x;
 
         }
     }
@@ -140,7 +141,7 @@ public class PhysicsObject : MonoBehaviour
         if (collision.gameObject.tag == "wall")
         {
             walljump = false;
-            
+
         }
 
         if (collision.gameObject.tag == "ice")
@@ -156,21 +157,29 @@ public class PhysicsObject : MonoBehaviour
             touchIce = true;
         }
 
-        if (collision.gameObject.tag == "movingPlatform" && Input.GetAxis("Horizontal") < 0.1f && Input.GetAxis("Horizontal") > -0.1f && !Input.GetButton("Jump") && !Input.GetButton("Fire3")){
+        if (collision.gameObject.tag == "movingPlatform" && Input.GetAxis("Horizontal") < 0.1f && Input.GetAxis("Horizontal") > -0.1f && !Input.GetButton("Jump") && !Input.GetButton("Fire3"))
+        {
             transform.parent = collision.transform.parent;
-        } else {
+        }
+        else
+        {
             transform.parent = null;
         }
     }
 
-    void OnTriggerEnter2D(Collider2D collision){
-        if (collision.gameObject.tag == "rope"){
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "rope")
+        {
             onRope = true;
+            Climb.Play();
         }
     }
 
-    void OnTriggerExit2D(Collider2D collision){
-        if (collision.gameObject.tag == "rope"){
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "rope")
+        {
             onRope = false;
         }
     }

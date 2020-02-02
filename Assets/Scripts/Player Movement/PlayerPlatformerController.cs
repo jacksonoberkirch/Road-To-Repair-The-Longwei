@@ -35,8 +35,10 @@ public class PlayerPlatformerController : PhysicsObject
         gravityModifier = 5;
         Vector2 move = Vector2.zero;
 
-        if(onRope){
+        if (onRope)
+        {
             grounded = true;
+
         }
 
         if (touchIce && !isSliding && Input.GetAxis("Horizontal") < 0.01f && Input.GetAxis("Horizontal") > -0.01f && !noSlideYet)
@@ -50,19 +52,21 @@ public class PlayerPlatformerController : PhysicsObject
             if (facingRight)
             {
                 move.x = 0.5f;
-            } else
+            }
+            else
             {
                 move.x = -0.5f;
             }
         }
-        else if (!isDashing) {
+        else if (!isDashing)
+        {
             move.x = Input.GetAxis("Horizontal");
             //holdSpeed = move.x;
-        } 
+        }
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
-            anim.SetTrigger("hasJumped");
+           /// anim.SetTrigger("hasJumped");
             velocity.y = jumpTakeOffSpeed;
         }
         else if (Input.GetButtonUp("Jump"))
@@ -76,7 +80,7 @@ public class PlayerPlatformerController : PhysicsObject
         if (Input.GetButtonDown("Jump") && !grounded && walljump)
         {
             wallSide = right;
-            
+
             if (isWallJumping)
             {
                 StopCoroutine(WallJump());
@@ -84,12 +88,13 @@ public class PlayerPlatformerController : PhysicsObject
             }
             StartCoroutine(WallJump());
         }
-        
 
 
 
-        if (move.x > 0.1f){
-            anim.SetTrigger("isWalking");
+
+        if (move.x > 0.1f)
+        {
+            ///anim.SetTrigger("isWalking");
             facingRight = true;
             spriteRenderer.flipX = false;
             noSlideYet = false;
@@ -97,8 +102,10 @@ public class PlayerPlatformerController : PhysicsObject
             {
                 StopCoroutine(Slide());
             }
-        } else if (move.x < -0.1f){
-            anim.SetTrigger("isWalking");
+        }
+        else if (move.x < -0.1f)
+        {
+            //anim.SetTrigger("isWalking");
             facingRight = false;
             spriteRenderer.flipX = true;
             noSlideYet = false;
@@ -106,9 +113,10 @@ public class PlayerPlatformerController : PhysicsObject
             {
                 StopCoroutine(Slide());
             }
-        } else
+        }
+        else
         {
-            anim.SetTrigger("isStopped");
+            //anim.SetTrigger("isStopped");
             noSlideYet = true;
         }
 
@@ -120,15 +128,20 @@ public class PlayerPlatformerController : PhysicsObject
             StartCoroutine(dashCooldown());
         }
 
-        if (isDashing) {
+        if (isDashing)
+        {
             rb2d.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
             velocity.y = 0;
-            if(facingRight){
-                targetVelocity = new Vector2(1,0) * maxSpeed * 2.5f;
-            } else {
-                targetVelocity = new Vector2(1,0) * maxSpeed * 2.5f * -1;
+            if (facingRight)
+            {
+                targetVelocity = new Vector2(1, 0) * maxSpeed * 2.5f;
             }
-        } else if (isWallJumping)
+            else
+            {
+                targetVelocity = new Vector2(1, 0) * maxSpeed * 2.5f * -1;
+            }
+        }
+        else if (isWallJumping)
         {
             if (wallSide)
             {
