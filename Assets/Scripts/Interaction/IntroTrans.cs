@@ -12,11 +12,16 @@ public class IntroTrans : MonoBehaviour
     {
         globalGameJam.canvasRenderer.SetAlpha(1.0f);
         fadeOut();
+
     }
    
      void fadeOut()
     {
-        globalGameJam.CrossFadeAlpha(0, 5, false);
+        globalGameJam.CrossFadeAlpha(0, 5, true);
+        
+    }
+    void disableImg() {
+        globalGameJam.enabled = false;
     }
     
 }
