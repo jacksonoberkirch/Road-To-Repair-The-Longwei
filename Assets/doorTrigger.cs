@@ -20,7 +20,7 @@ public class doorTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         { //Add Door collision here!
-            Debug.Log("doorhit");
+           // Debug.Log("doorhit");
             sn.FadeToNextLevel();
         }
     }
