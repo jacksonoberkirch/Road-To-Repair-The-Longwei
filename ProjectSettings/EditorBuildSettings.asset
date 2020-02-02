@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VanessaScene.unity
     guid: e52f065b750bb894eb3088b5d611f3e9
+  - enabled: 1
+    path: Assets/Scenes/Sky_Animatic.unity
+    guid: 3afd39ec23d2c354eab0c6c4c475f1b0
   m_configObjects: {}
