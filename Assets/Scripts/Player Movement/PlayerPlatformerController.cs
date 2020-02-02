@@ -66,7 +66,7 @@ public class PlayerPlatformerController : PhysicsObject
 
         if (Input.GetButtonDown("Jump") && grounded)
         {
-           /// anim.SetTrigger("hasJumped");
+            anim.SetTrigger("hasJumped");
             velocity.y = jumpTakeOffSpeed;
         }
         else if (Input.GetButtonUp("Jump"))
@@ -94,7 +94,7 @@ public class PlayerPlatformerController : PhysicsObject
 
         if (move.x > 0.1f)
         {
-            ///anim.SetTrigger("isWalking");
+            anim.SetTrigger("isWalking");
             facingRight = true;
             spriteRenderer.flipX = false;
             noSlideYet = false;
@@ -105,7 +105,7 @@ public class PlayerPlatformerController : PhysicsObject
         }
         else if (move.x < -0.1f)
         {
-            //anim.SetTrigger("isWalking");
+            anim.SetTrigger("isWalking");
             facingRight = false;
             spriteRenderer.flipX = true;
             noSlideYet = false;
@@ -116,7 +116,7 @@ public class PlayerPlatformerController : PhysicsObject
         }
         else
         {
-            //anim.SetTrigger("isStopped");
+            anim.SetTrigger("isStopped");
             noSlideYet = true;
         }
 

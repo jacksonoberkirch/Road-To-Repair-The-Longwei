@@ -534,7 +534,7 @@ MonoBehaviour:
   touchIce: 0
   jump: {fileID: 2092030251}
   dash: {fileID: 6622077378266093271}
-  Climb: {fileID: 3974555797621391535}
+  Climb: {fileID: 0}
   onRope: 0
   walljump: 0
   right: 0
@@ -567,7 +567,7 @@ MonoBehaviour:
   touchIce: 0
   jump: {fileID: 2092030251}
   dash: {fileID: 6622077378266093271}
-  Climb: {fileID: 3974555797621391535}
+  Climb: {fileID: 0}
   onRope: 0
   walljump: 0
   right: 0
@@ -593,9 +593,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630948264061689430}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dc88a0ca8be691d468a163efcace8604, type: 2}
+  m_Controller: {fileID: 9100000, guid: eafb23e58da43884591287c7d2367ae0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
