@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [movingPlatform, rope, Create, movingPlatform]
+  tags:
+  - movingPlatform
+  - rope
+  - Create
+  - movingPlatform
+  - Door
   layers:
   - Default
   - TransparentFX

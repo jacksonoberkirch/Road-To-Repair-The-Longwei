@@ -10,9 +10,9 @@ public class LevelChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)){ //Add Door collision here!
-            FadeToNextLevel();
-        }
+       // //if (Input.GetMouseButtonDown(0)){ //Add Door collision here!
+            //FadeToNextLevel();
+        //}
         
     }
     public void FadeToNextLevel() {
