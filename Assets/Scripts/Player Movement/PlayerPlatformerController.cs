@@ -68,6 +68,10 @@ public class PlayerPlatformerController : PhysicsObject
         {
             anim.SetTrigger("hasJumped");
             velocity.y = jumpTakeOffSpeed;
+            if (onRope == true)
+            {
+                Climb.Play();
+            }
         }
         else if (Input.GetButtonUp("Jump"))
         {

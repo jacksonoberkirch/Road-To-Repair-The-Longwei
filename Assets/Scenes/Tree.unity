@@ -8504,7 +8504,7 @@ PrefabInstance:
     - target: {fileID: 6202281210656286544, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6851076518356914771, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
@@ -8663,7 +8663,7 @@ PrefabInstance:
     - target: {fileID: 6202281210656286544, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6851076518356914771, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
@@ -8737,7 +8737,7 @@ PrefabInstance:
     - target: {fileID: 6202281210656286544, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6851076518356914771, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
@@ -8817,7 +8817,7 @@ PrefabInstance:
     - target: {fileID: 6202281210656286544, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6851076518356914771, guid: bfb662bf2634e5e4895832777a12ef08,
         type: 3}
@@ -8979,19 +8979,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1943695629, guid: b886a388fa2cc6e40be69dcf41253e1c, type: 3}
       propertyPath: orthographic size
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1943695630, guid: b886a388fa2cc6e40be69dcf41253e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.21557072
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1943695630, guid: b886a388fa2cc6e40be69dcf41253e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1943695630, guid: b886a388fa2cc6e40be69dcf41253e1c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 2105262045, guid: b886a388fa2cc6e40be69dcf41253e1c, type: 3}
       propertyPath: m_Enabled

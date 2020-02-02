@@ -172,7 +172,7 @@ public class PhysicsObject : MonoBehaviour
         if (collision.gameObject.tag == "rope")
         {
             onRope = true;
-            Climb.Play();
+            //Climb.Play();
         }
     }
 
