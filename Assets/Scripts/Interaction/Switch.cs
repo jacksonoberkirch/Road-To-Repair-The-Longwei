@@ -10,6 +10,8 @@ public class Switch : MonoBehaviour
     [SerializeField]
     GameObject switchOff;
 
+    public AudioSource press;
+
     public bool isOn = false;
 
     void Start()
@@ -21,6 +23,7 @@ public class Switch : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = switchOn.GetComponent<SpriteRenderer>().sprite;
+        press.Play();
 
         isOn = true;
     }
